@@ -27,7 +27,7 @@ export default function Dashboard() {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("https://creditwise-backend.onrender.com/predict", formData, {
+      const res = await axios.post("https://creditwise-ld2t.onrender.com/predict", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setPredictions(res.data.predictions);
